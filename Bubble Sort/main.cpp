@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void BubbleSort(int arr[], int size)
+void BubbleSort(int arr[], int n)
 {
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         int flag = 0;
-        for (int j = 0; j < size - i - 1; j++)
+        for (int j = 0; j < n - i - 1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
@@ -24,11 +24,11 @@ void BubbleSort(int arr[], int size)
 int main()
 {
     int arr[]{5, 7, 8, 1, 2};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int n = sizeof(arr) / sizeof(arr[0]);
 
-    BubbleSort(arr, size);
+    BubbleSort(arr, n);
 
-    for (size_t i = 0; i < size; i++)
+    for (size_t i = 0; i < n; i++)
         cout << arr[i] << " ";
 
     return 0;
