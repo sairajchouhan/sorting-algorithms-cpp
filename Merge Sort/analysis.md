@@ -4,6 +4,8 @@
 
 - The computation we do at each call is the merge step, which takes some extra space to complete the merge step
 
+- Merge sort works best with linked list since we dont need any extra space to merge linked lists all we need to do is manipulate links so that it is in sorted order which takes constant time, hence merge sort works best for sorting linked lists
+
 |                  |          |
 | ---------------- | -------- |
 | Time complexity  | O(nlogn) |
